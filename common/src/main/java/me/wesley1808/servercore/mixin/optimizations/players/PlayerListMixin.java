@@ -45,7 +45,6 @@ public class PlayerListMixin {
             )
     )
     private void servercore$moveToSpawn(Connection netManager, ServerPlayer player, CallbackInfo ci, GameProfile gameProfile, GameProfileCache gameProfileCache, String string, CompoundTag playerData, ResourceKey<?> resourceKey, ServerLevel ignored, ServerLevel level) {
-        if (playerData == null) player.fudgeSpawnLocation(level);
     }
 
     // ServerCore - Finds random spawn location for respawning players without spawnpoint.
